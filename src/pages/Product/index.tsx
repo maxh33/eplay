@@ -7,7 +7,9 @@ import Gallery from '../../components/Gallery'
 import cover from '../../assets/images/fundo_hogwarts.png'
 
 const Product = () => {
-  const { id } = useParams()
+  const { id } = useParams<{ id: string }>()
+
+  // For now, this is a static page for Hogwarts Legacy
 
   return (
     <>
