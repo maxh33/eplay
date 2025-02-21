@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Colors } from '../../styles'
+import { Link } from 'react-router-dom'
 
 export const HeaderBar = styled.header`
   background-color: ${Colors.gray};
@@ -39,6 +40,20 @@ export const LinkItem = styled.li`
     font-weight: bold;
   }
 `
+export const LogoLink = styled(Link)`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  img {
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+`
+
 export const LinkCart = styled.a`
   display: flex;
   align-items: center;
