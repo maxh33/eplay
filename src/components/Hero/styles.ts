@@ -46,7 +46,6 @@ export const Infos = styled.div`
   font-weight: bold;
   color: ${Colors.white};
   font-size: 18px;
-  line-height: 20px;
   border-radius: 8px;
 
   h2 {

@@ -16,7 +16,6 @@ export const Container = styled.section<Omit<Props, 'title' | 'children'>>`
 
   p {
     font-size: 14px;
-    line-height: 22px;
     max-width: 640px;
   }
 `
