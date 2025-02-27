@@ -1,12 +1,13 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { breakpoints, Colors } from '../../styles'
 import { Link } from 'react-router-dom'
 
 export const HeaderBar = styled.header`
   background-color: ${Colors.gray};
   padding: 24px;
   border-radius: 16px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,6 +23,10 @@ export const HeaderBar = styled.header`
     display: flex;
     align-items: center;
     gap: 16px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: none;
   }
 `
 export const Links = styled.ul`
@@ -54,7 +59,7 @@ export const LogoLink = styled(Link)`
   }
 `
 
-export const LinkCart = styled.a`
+export const CartButton = styled.a`
   display: flex;
   align-items: center;
   gap: 16px;

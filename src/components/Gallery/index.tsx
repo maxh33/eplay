@@ -6,18 +6,6 @@ import { Action, Item, Items, Modal, ModalContent } from './styles'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import close from '../../assets/images/close.png'
-import modal from '../../assets/images/modal.png'
-
-const mock: GalleryItem[] = [
-  {
-    type: 'image',
-    url: modal
-  },
-  {
-    type: 'video',
-    url: 'https://www.youtube.com/embed/NthGfn_ddRQ?si=0Gg4iIhq-KkUVFlJ'
-  }
-]
 
 type Props = {
   defaultCover: string

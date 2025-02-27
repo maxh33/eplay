@@ -36,6 +36,7 @@ export const Descricao = styled.p`
   font-size: 14px;
   display: block;
   margin-top: 16px;
+  flex-grow: 1;
 `
 
 export const Infos = styled.div`
