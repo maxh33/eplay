@@ -23,7 +23,7 @@ const cartSlice = createSlice({
         alert('Jogo já está no carrinho')
       }
     },
-    remove: (state, action: PayloadAction<number>) => {
+    remove: (state, action: PayloadAction<string>) => {
       state.items = state.items.filter((item) => item.id !== action.payload)
     },
     close: (state) => {

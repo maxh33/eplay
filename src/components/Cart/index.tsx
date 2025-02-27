@@ -23,11 +23,11 @@ const Cart = () => {
 
   const getTotalPrice = () => {
     return items.reduce((acc, actualPrice) => {
-      return (acc += actualPrice.prices.current!)
+      return (acc += actualPrice.prices.current)
     }, 0)
   }
 
-  const removeItem = (id: number) => {
+  const removeItem = (id: string) => {
     dispatch(remove(id))
   }
 
@@ -55,7 +55,9 @@ const Cart = () => {
           {''}
           <span> Em até 6x sem Juros </span>
         </Prices>
-        <Button type="button" title="Clique aqui para finalizar a compra" />
+        <Button type="button" title="Clique aqui para finalizar a compra">
+          Finalizar compra
+        </Button>
       </Sidebar>
     </CartContainer>
   )
