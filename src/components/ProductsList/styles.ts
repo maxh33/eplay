@@ -21,9 +21,14 @@ export const List = styled.ul`
   gap: 24px;
   margin-top: 40px;
 
-    @media (max-width: ${breakpoints.desktop}) {
-      grid-template-columns: 1fr 1fr;
-    }
+  li {
+    display: flex;
+    height: 100%;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    grid-template-columns: 1fr 1fr;
+  }
 
     @media (max-width: ${breakpoints.tablet}) {
       grid-template-columns: 1fr;

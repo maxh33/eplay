@@ -42,19 +42,23 @@ const Home = () => {
   if (onSaleGames && soonGames) {
     return (
       <>
-        <Banner />
+        <div id="home">
+          <Banner />
+        </div>
         <ProductsList
           games={onSaleGames}
           title="Promoções"
           background="gray"
           id="on-sale"
         />
-        <ProductsList
-          games={soonGames}
-          title="Em breve"
-          background="black"
-          id="soon"
-        />
+        <div id="soon">
+          <ProductsList
+            games={soonGames}
+            title="Em breve"
+            background="black"
+            id="soon"
+          />
+        </div>
       </>
     )
   }

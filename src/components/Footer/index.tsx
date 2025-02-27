@@ -29,6 +29,9 @@ const Footer = () => (
         <SectionTitle>Acesso rápido</SectionTitle>
         <Links>
           <li>
+            <Link to="/#home">Página inicial</Link>
+          </li>
+          <li>
             <Link to="/#on-sale">Promoções</Link>
           </li>
           <li>

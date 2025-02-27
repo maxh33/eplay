@@ -23,13 +23,13 @@ const Header = () => {
         <nav>
           <Links>
             <LinkItem>
+              <Link to="/#home">Página inicial</Link>
+            </LinkItem>
+            <LinkItem>
               <Link to="/categories">Categorias</Link>
             </LinkItem>
             <LinkItem>
-              <a href="/product/:id">Novidades</a>
-            </LinkItem>
-            <LinkItem>
-              <a href="/product/:id">Promoções</a>
+              <Link to="/#on-sale">Promoções</Link>
             </LinkItem>
           </Links>
         </nav>
