@@ -54,7 +54,7 @@ export const LogoLink = styled(Link)`
   }
 `
 
-export const LinkCart = styled.a`
+export const CartButton = styled.a`
   display: flex;
   align-items: center;
   gap: 16px;
