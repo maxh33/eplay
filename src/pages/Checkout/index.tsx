@@ -7,9 +7,11 @@ import boleto from '../../assets/images/barcode.png'
 import cartao from '../../assets/images/credit-card.png'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+import { usePurchaseMutation } from '../../services/api'
 
 const Checkout = () => {
   const [payWithCard, setPayWithCard] = useState(false)
+  const [purchase, { isLoading, isError, data }] = usePurchaseMutation()
 
   const form = useFormik({
     initialValues: {
@@ -79,7 +81,38 @@ const Checkout = () => {
         .min(1, 'Parcelamento deve ser maior que 0')
     }),
     onSubmit: (values) => {
-      console.log(values)
+      purchase({
+        products: [
+          {
+            id: '1',
+            price: 0
+          }
+        ],
+        billing: {
+          name: values.name,
+          email: values.email,
+          document: values.cpf
+        },
+        delivery: {
+          email: values.deliveryEmail
+        },
+        payment: {
+          installments: values.installments,
+          card: {
+            active: payWithCard,
+            owner: {
+              name: values.cardOwner,
+              document: values.cpfCardOwner
+            },
+            number: values.cardNumber,
+            code: Number(values.cardCodeCVV),
+            expires: {
+              month: Number(values.expirationMonth),
+              year: Number(values.expirationYear)
+            }
+          }
+        }
+      })
     }
   })
 
