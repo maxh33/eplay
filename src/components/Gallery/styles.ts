@@ -80,6 +80,12 @@ export const ModalContent = styled.div`
       font-weight: bold;
       color: ${Colors.white};
     }
+
+    img {
+      height: 16px;
+      width: 16px;
+      cursor: pointer;
+    }
   }
 
   > img {
