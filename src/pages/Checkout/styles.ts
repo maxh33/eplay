@@ -31,11 +31,15 @@ export const InputGroup = styled.div<InputGroupProps>`
   }
   input,
   select {
+    height: 32px;
     width: 100%;
-    padding: 8px;
-    border-radius: 4px;
+    padding: 0 8px;
     background-color: ${Colors.white};
-    border: 1px solid ${Colors.gray};
+    border: 1px solid ${Colors.white};
+
+    &.error {
+      border: 1px solid ${Colors.red};
+    }
   }
 `
 export const TabButton = styled.button<TabButtonProps>`

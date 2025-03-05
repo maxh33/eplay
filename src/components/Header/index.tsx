@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
 import * as S from './styles'
