@@ -37,13 +37,21 @@ export const Sidebar = styled.aside`
 
   ${ButtonContainer} {
     max-width: 100%;
-    margin-top: 24px;
+    width: 100%;
+  }
+
+  .empty-text {
+    font-size: 14px;
+    color: ${Colors.white};
+    text-align: center;
+    line-height: 22px;
   }
 `
 export const Prices = styled.p`
   font-size: 14px;
   font-weight: bold;
   color: ${Colors.white};
+  margin-bottom: 24px;
 
   span {
     color: ${Colors.lightGray};

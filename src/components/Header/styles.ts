@@ -7,7 +7,9 @@ export const Links = styled.ul`
 
   @media (max-width: ${breakpoints.tablet}) {
     margin-left: 0;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 `
 
@@ -78,7 +80,7 @@ export const LinkItem = styled.li`
   }
 `
 
-export const CartButton = styled.a`
+export const CartButton = styled.span`
   display: flex;
   cursor: pointer;
   img {
