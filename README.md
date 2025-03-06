@@ -6,7 +6,7 @@ A modern game e-commerce frontend application built with React and TypeScript. F
 ## 🎥 Demo
 ![Project Demo](https://github.com/maxh33/eplay/blob/main/public/GamesEcommerceDemo.gif)
 
-[Live Demo](https://eplay-rmvf0ox6x-maxh33s-projects.vercel.app)
+[Live Demo](https://eplay-imiw7sauj-maxh33s-projects.vercel.app/)
 
 ## ✨ Features
 - 🛒 Shopping Cart Management
